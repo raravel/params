@@ -6,8 +6,9 @@ This script parses the [Query String](https://en.wikipedia.org/wiki/Query_string
 
 Just add script file in html file.
 
-<br>
-#### Basic
+<br/>
+
+### Basic
 
 ```html
 <html doctype>
@@ -23,13 +24,16 @@ Just add script file in html file.
 ```
 
 
-#### CDN
+### CDN
+
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/Tree-Some/params@v.1.0.0/params.js"></script>
 ```
 
-<br>
+<br/>
+
+
 ## Usage
 
 Can access `location.params` JSON Object
