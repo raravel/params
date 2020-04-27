@@ -1,6 +1,7 @@
 (function () {
     var params = {};
-    var search = location.search.replace(/^\?/, '');
+	var uri = decodeURI(location.search);
+    var search = uri.replace(/^\?/, '');
     var arr = search.split('&');
 
     for ( var i = 0;i< arr.length;i++ ) {
@@ -8,5 +9,5 @@
         params[ps[0]] = ps[1] || '';
     }
     
-    window.params = params;
+    location.params = params;
 })();
