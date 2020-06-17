@@ -1,6 +1,13 @@
 (function () {
     var params = {};
-	var uri = decodeURI(location.search);
+    var qsIdx = location.href.indexOf('?');
+
+    if ( qsIdx < 0 ) {
+        return;
+    }
+
+    var qs = location.href.substr(qsIdx);
+	var uri = decodeURI(qs);
     var search = uri.replace(/^\?/, '');
     var arr = search.split('&');
 
