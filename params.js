@@ -1,4 +1,4 @@
-(function () {
+function __params_parse__() {
     var params = {};
     var qsIdx = location.href.indexOf('?');
 
@@ -17,4 +17,8 @@
     }
     
     location.params = params;
-})();
+
+};
+
+__params_parse__();
+window.addEventListener('hashchange', __params_parse__, false);
