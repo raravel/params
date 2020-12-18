@@ -28,7 +28,7 @@ Just add script file in html file.
 
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/Tree-Some/params/params.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/raravel/params/params.js"></script>
 ```
 
 <br/>
